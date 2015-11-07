@@ -1,4 +1,5 @@
 /* Empty. Add your own CSS if you like */
+
 .tl-btn {
   border-radius: 10px;
   font-size: 22px;
@@ -14,4 +15,9 @@
 
 .slider-pager .slider-pager-page {
   color: white;
+}
+
+#in-flight-state {
+  width: 100%;
+  height: 100%;
 }
