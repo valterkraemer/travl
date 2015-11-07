@@ -1,10 +1,5 @@
 /* Empty. Add your own CSS if you like */
 
-/*
-Dark-blue: #243B53
-Button-blue: #005DA0
-*/
-
 .tl-btn {
   border-radius: 10px;
   font-size: 22px;
@@ -27,13 +22,34 @@ Button-blue: #005DA0
   height: 100%;
 }
 
-.color-white{
-  color: #fff;
+.notify-title {
+  color: white;
 }
 
-.background-dark-blue {
-  background-color: #243B53;
-  color: white;
+.list .item i.notify-checkmark {
+  font-size: 38px;
+  color: #76EE00;
+}
+
+.notify-row-container {
+  line-height: 1.2;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.notify-row-container .notify-row-header {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.wrap {
+  word-break: break-all;
+}
+
+.color-white{
+  color: #fff;
 }
 
 .bar-header {
