@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'ngResource', 'starter.controllers', 'starter.services', 'starter.FinnairApi'])
+angular.module('starter', ['ionic', 'ngResource'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -39,22 +39,22 @@ angular.module('starter', ['ionic', 'ngResource', 'starter.controllers', 'starte
     .state('tab', {
     url: '/tab',
     abstract: true,
-    templateUrl: 'templates/tabs.html'
+    templateUrl: 'views/tabs.html'
   })
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.main', {
+    url: '/main',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-main': {
+        templateUrl: 'views/main/main.html',
+        controller: 'MainCtrl'
       }
     }
-  })
+  });
 
-  .state('tab.chats', {
+  /*.state('tab.chats', {
       url: '/chats',
       views: {
         'tab-chats': {
@@ -81,9 +81,9 @@ angular.module('starter', ['ionic', 'ngResource', 'starter.controllers', 'starte
         controller: 'AccountCtrl'
       }
     }
-  });
+  });*/
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/main');
 
 });
