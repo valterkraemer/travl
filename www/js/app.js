@@ -54,7 +54,8 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
   .state('tab', {
     url: '/tab',
     abstract: true,
-    templateUrl: 'views/tabs.html'
+    templateUrl: 'views/tabs.html',
+    controller: 'TabsController'
   })
 
   .state('tab.in-flight', {
@@ -90,6 +91,15 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
     }
   })
 
+  .state('tab.mood', {
+    url: '/mood',
+    views: {
+      'tab-mood': {
+        templateUrl: 'views/mood/mood.html',
+        controller: 'TabsController'
+      }
+    }
+  })
   // Each tab has its own nav history stack:
 
   .state('tab.main', {

@@ -70,3 +70,8 @@ Button-blue: #005DA0
 .gray {
   color: #BBB;
 }
+
+/* fullscreen images */
+img.fullscreen  {
+  width: 100%;
+}
