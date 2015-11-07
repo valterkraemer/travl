@@ -1,1 +1,23 @@
 /* Empty. Add your own CSS if you like */
+
+.tl-btn {
+  border-radius: 10px;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.button.button-positive.tl-btn {
+  width: 80%;
+  margin: auto;
+  margin-left: 10%;
+  background-color: #005DA0;
+}
+
+.slider-pager .slider-pager-page {
+  color: white;
+}
+
+#in-flight-state {
+  width: 100%;
+  height: 100%;
+}

@@ -40,11 +40,22 @@ angular.module('starter', ['ionic', 'ngResource'])
     templateUrl: 'views/login/login.html'
   })
 
+    .state('getStarted', {
+    url: '/getStarted',
+    templateUrl: 'views/get-started/get-started.html'
+  })
+
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'views/tabs.html'
+  })
+
+  .state('tab.trip-in-flight', {
+    url: '/trip/in-flight',
+    templateUrl: 'views/in-flight/in-flight.html',
+    controller: 'InFlightController'
   })
 
   // Each tab has its own nav history stack:
