@@ -21,3 +21,12 @@
   width: 100%;
   height: 100%;
 }
+
+.color-white{
+  color: #fff;
+}
+
+.bar-header {
+  background: #243B53;
+  color: white;
+}
