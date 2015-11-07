@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'ngResource'])
+angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -18,7 +18,8 @@ angular.module('starter', ['ionic', 'ngResource'])
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      //StatusBar.styleDefault();
+      StatusBar.style(1);
     }
   });
 })
@@ -44,13 +45,13 @@ angular.module('starter', ['ionic', 'ngResource'])
     templateUrl: 'views/login/login.html'
   })
 
-    .state('getStarted', {
+  .state('getStarted', {
     url: '/getStarted',
     templateUrl: 'views/get-started/get-started.html'
   })
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'views/tabs.html'
@@ -66,12 +67,25 @@ angular.module('starter', ['ionic', 'ngResource'])
     }
   })
 
-  .state('tab.nextFlight', {
-    url: '/tab-nextFlight',
+  .state('tab.flight', {
+    url: '/flight',
     views: {
-      'tab-nextFlight': {
-        templateUrl: 'views/next-flight/next-flight.html',
-        controller: 'NextFlightCtrl'
+      'tab-bookings': {
+        templateUrl: 'views/flight/flight.html',
+        controller: 'FlightCtrl'
+      }
+    },
+    params: {
+      flight: null
+    }
+  })
+
+  .state('tab.bookings', {
+    url: '/bookings',
+    views: {
+      'tab-bookings': {
+        templateUrl: 'views/bookings/bookings.html',
+        controller: 'BookingsCtrl'
       }
     }
   })

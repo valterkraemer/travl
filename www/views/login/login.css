@@ -1,0 +1,51 @@
+.login .scroll-content {
+  background-color: #243B53;
+}
+
+.login img {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.login input {
+  background-color: #3b4d64;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  margin-left: 10%;
+  padding: 25px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.login input::-webkit-input-placeholder {
+  vertical-align: middle;
+  color: #FFF;
+}
+.login input:-moz-placeholder {
+  vertical-align: middle;
+  color: #FFF;
+}
+.login input::-moz-placeholder {
+  vertical-align: middle;
+  color: #FFF;
+}
+.login input:-ms-input-placeholder {
+  vertical-align: middle;
+  color: #FFF;
+}
+
+.login .create {
+  margin-left: 10%;
+}
+
+.login .help {
+  margin-right: 10%;
+}
+
+.login .cell {
+  width: 100%;
+}

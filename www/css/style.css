@@ -11,6 +11,7 @@
   margin: auto;
   margin-left: 10%;
   background-color: #005DA0;
+  margin-bottom: 20px;
 }
 
 .slider-pager .slider-pager-page {
@@ -55,4 +56,12 @@
 .bar-header {
   background: #243B53;
   color: white;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.gray {
+  color: #BBB;
 }

@@ -19,17 +19,21 @@
   <script src="lib/ionic/js/angular/angular-resource.js"></script>
 
   <!-- cordova script (this will be a 404 during development) -->
+  <script src="lib/ngCordova/dist/ng-cordova.js"></script>
   <script src="cordova.js"></script>
 
   <!-- your app's js -->
   <script src="js/app.js"></script>
 
   <!-- Views -->
+    <link href="views/login/login.css" rel="stylesheet">
   <script src="views/main/main.controller.js"></script>
   <link href="views/get-started/get-started.css" rel="stylesheet">
   <script src="views/in-flight/in-flight.controller.js"></script>
-  <script src="views/next-flight/next-flight.controller.js"></script>
-  <link href="views/next-flight/next-flight.css" rel="stylesheet">
+  <script src="views/flight/flight.controller.js"></script>
+  <link href="views/flight/flight.css" rel="stylesheet">
+  <script src="views/bookings/bookings.controller.js"></script>
+  <link href="views/bookings/bookings.css" rel="stylesheet">
 
   <!-- Services -->
   <script src="js/FinnairApi.service.js"></script>
@@ -40,10 +44,8 @@
       The nav bar that will be updated as we navigate between views.
     -->
 
-  <ion-nav-bar>
-    <ion-nav-buttons side="left">
-      <button class="button button-icon icon ion-navicon color-white"></button>
-    </ion-nav-buttons>
+  <ion-nav-bar class="nav-title-slide-ios7">
+    <ion-nav-back-button></ion-nav-back-button>
     <ion-nav-buttons side="right">
       <button class="button button-icon ion-ios-search color-white"></button>
     </ion-nav-buttons>
@@ -54,6 +56,6 @@
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
-    <ion-nav-view></ion-nav-view>
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
   </body>
   </html>

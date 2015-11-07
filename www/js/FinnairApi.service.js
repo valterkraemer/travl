@@ -63,6 +63,18 @@ angular.module('starter')
           accessToken: accessToken
         }
       });
+    },
+    getBookingDetails: function(pnr) {
+      //https://slush.ecom.finnair.com/api/getbookingdetails
+      return $http({
+        url: baseUrl + '/getbookingdetails',
+        method: 'GET',
+        params: {
+          appId: appId,
+          pnr: pnr,
+          accessToken: accessToken
+        }
+      });
     }
   };
 
