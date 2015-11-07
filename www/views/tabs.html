@@ -5,14 +5,14 @@ navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
+  <!-- Chats Tab -->
+  <ion-tab title="Journeys" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" ui-sref="tab.bookings">
+    <ion-nav-view name="tab-bookings"></ion-nav-view>
+  </ion-tab>
+
   <!-- Dashboard Tab -->
   <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/main">
     <ion-nav-view name="tab-main"></ion-nav-view>
-  </ion-tab>
-
-  <!-- Chats Tab -->
-  <ion-tab title="Bookings" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" ui-sref="tab.bookings">
-    <ion-nav-view name="tab-bookings"></ion-nav-view>
   </ion-tab>
 
   <ion-tab title="In Flight" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" ui-sref="tab.inFlight">

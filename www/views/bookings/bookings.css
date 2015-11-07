@@ -1,3 +1,43 @@
 .bookings .scroll-content {
-  background-color: #243B53;
+  /*background-color: #243B53;*/
+}
+
+.bookings .item:nth-child(1) {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),url('../../img/helsinki.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.bookings .item:nth-child(2) {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),url('../../img/paris.jpeg') no-repeat center center;
+  background-size:cover;
+}
+
+.bookings .item {
+  color: white;
+  font-size: 16px;
+  padding: 25px 15px;
+  text-shadow: 1px 1px #555;
+}
+
+.bookings .airport-names {
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.bookings .cell {
+  overflow: hidden;
+}
+
+.bookings .airport-names {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
