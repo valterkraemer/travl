@@ -1,6 +1,6 @@
 angular.module('starter')
 
-.controller('MainCtrl', function($scope, FinnairApi) {
+.controller('NextFlightCtrl', function($scope, FinnairApi) {
 
   FinnairApi.init().then(function() {
 
