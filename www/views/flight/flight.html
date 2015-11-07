@@ -5,7 +5,7 @@
 
   <div class="row">
     <div class="col">
-      <div class="flight-name">FLIGHT NAME</div>
+      <div class="flight-name">FLIGHT {{flight.marketingAirline}}{{flight.flightNumber}}</div>
     </div>
   </div>
 
@@ -17,7 +17,7 @@
 
   <div class="row time">
     <div class="col">
-      <div class="flight-date">Saturday 23 Aug 2015</div>
+      <div class="flight-date departure">{{flight.departure.estimatedDateTime | date:'fullDate'}}</div>
     </div>
   </div>
 
@@ -28,14 +28,14 @@
   </div>
 
   <div class="row time">
-    <div class="col">
-      02:00 PM
+    <div class="col departure-time">
+      {{flight.departure.estimatedDateTime | date:'shortTime'}}
     </div>
     <div class="col plane">
       <i class="ion-android-plane"></i>
     </div>
-    <div class="col align-right">
-      03:30 PM
+    <div class="col align-right arrival-time">
+      {{flight.arrival.estimatedDateTime | date:'shortTime'}}
     </div>
   </div>
 

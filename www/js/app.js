@@ -66,12 +66,25 @@ angular.module('starter', ['ionic', 'ngResource'])
     }
   })
 
-  .state('tab.nextFlight', {
-    url: '/tab-nextFlight',
+  .state('tab.flight', {
+    url: '/flight',
     views: {
-      'tab-nextFlight': {
-        templateUrl: 'views/next-flight/next-flight.html',
-        controller: 'NextFlightCtrl'
+      'tab-bookings': {
+        templateUrl: 'views/flight/flight.html',
+        controller: 'FlightCtrl'
+      }
+    },
+    params: {
+      flight: null
+    }
+  })
+
+  .state('tab.bookings', {
+    url: '/bookings',
+    views: {
+      'tab-bookings': {
+        templateUrl: 'views/bookings/bookings.html',
+        controller: 'BookingsCtrl'
       }
     }
   })
