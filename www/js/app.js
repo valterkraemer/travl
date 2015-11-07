@@ -40,6 +40,11 @@ angular.module('starter', ['ionic', 'ngResource'])
     templateUrl: 'views/login/login.html'
   })
 
+    .state('getStarted', {
+    url: '/getStarted',
+    templateUrl: 'views/get-started/get-started.html'
+  })
+
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
