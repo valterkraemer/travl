@@ -23,6 +23,10 @@ angular.module('starter', ['ionic', 'ngResource'])
   });
 })
 
+.run(function(FinnairApi) {
+  FinnairApi.setMembernumber('680297298');
+})
+
 // .constant('ApiEndpoint', {
 //  url: 'https://slush.ecom.finnair.com/api/'
 // })
@@ -58,6 +62,16 @@ angular.module('starter', ['ionic', 'ngResource'])
       'tab-inflight': {
         templateUrl: 'views/in-flight/in-flight.html',
         controller: 'InFlightController'
+      }
+    }
+  })
+
+  .state('tab.nextFlight', {
+    url: '/tab-nextFlight',
+    views: {
+      'tab-nextFlight': {
+        templateUrl: 'views/next-flight/next-flight.html',
+        controller: 'NextFlightCtrl'
       }
     }
   })
