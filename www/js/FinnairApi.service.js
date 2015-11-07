@@ -1,4 +1,4 @@
-angular.module('starter.FinnairApi', [])
+angular.module('starter')
 
 .factory('FinnairApi', function($q, $resource, $http) {
 
