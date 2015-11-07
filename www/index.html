@@ -38,6 +38,9 @@
   <!-- Services -->
   <script src="js/FinnairApi.service.js"></script>
 
+  <!-- Directives -->
+  <script src="js/points.directive.js"></script>
+
 </head>
 <body ng-app="starter">
     <!--
@@ -47,7 +50,7 @@
   <ion-nav-bar class="nav-title-slide-ios7">
     <ion-nav-back-button></ion-nav-back-button>
     <ion-nav-buttons side="right">
-      <button class="button button-icon ion-ios-search color-white"></button>
+      <button class="button button-clear color-white points" points><i class="ion-star"></i> {{points}}</button>
     </ion-nav-buttons>
   </ion-nav-bar>
 

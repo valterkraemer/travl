@@ -24,8 +24,10 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
   });
 })
 
-.run(function(FinnairApi) {
+.run(function(FinnairApi, $rootScope) {
   FinnairApi.setMembernumber('680297298');
+
+  $rootScope.points = 9780;
 })
 
 // .constant('ApiEndpoint', {

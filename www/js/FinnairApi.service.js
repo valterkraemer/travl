@@ -37,8 +37,6 @@ angular.module('starter')
     }).success(function(data) {
       accessToken = data.access_token;
       deferred.resolve();
-
-      console.log(accessToken);
     }).error(function(err) {
       console.error(err);
     });
