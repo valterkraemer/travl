@@ -15,7 +15,7 @@ angular.module('starter')
 
   $scope.goToNextFlightInfo = function() {
     $scope.modal.hide();
-    $state.go('tab.nextFlight');
+    $state.go('tab.flight');
   };
 
 });
