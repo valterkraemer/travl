@@ -5,12 +5,12 @@
 
   <div class="booking" ng-repeat="booking in bookings">
 
-    <div class="item background-dark-blue item-icon-right" ng-repeat="flight in booking.journeys[0].flights" ng-click="goToFlight(flight)">
+    <div class="item item-icon-right" ng-repeat="flight in booking.journeys[0].flights" ng-click="goToFlight(flight)">
       <div class="row">
         <div class="cell">
-          <div>{{flight.departure.airportName}} - {{flight.arrival.airportName}}</div>
-          <div>{{flight.departure.airport}} - {{flight.arrival.airport}}</div>
-          <div>{{flight.departure.scheduledDateTime | date:'short'}} - {{flight.arrival.scheduledDateTime | date:'short'}}</div>
+          <div class="airport-names">{{flight.departure.airportName}} - {{flight.arrival.airportName}}</div>
+          <div><b>For: </b>{{booking.passengers.length}} persons</div>
+          <div><b>On: </b>{{flight.departure.scheduledDateTime | date:'fullDate'}}</div>
         </div>
         <div class="cell">
           <i class="icon ion-ios-arrow-forward"></i>
@@ -20,20 +20,6 @@
 
   </div>
 
-  <!--
-  <div class="item background-dark-blue item-icon-right" ng-repeat="booking in bookings">
-
-
-    <div class="row">
-      <div class="col">
-        <div>{{booking.journeys[0]}}</div>
-        <div class="gray">Not selected yet</div>
-      </div>
-      <div class="col">
-        <i class="icon ion-ios-arrow-forward"></i>
-      </div>
-    </div>
-  </div>-->
 </div>
 
 </ion-content>
