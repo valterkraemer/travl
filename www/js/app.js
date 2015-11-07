@@ -42,6 +42,12 @@ angular.module('starter', ['ionic', 'ngResource', 'starter.controllers', 'starte
     templateUrl: 'templates/tabs.html'
   })
 
+  .state('trip-in-flight', {
+    url: '/trip/in-flight',
+    templateUrl: 'views/in-flight/in-flight.html',
+    controller: 'InFlightController'
+  })
+
   // Each tab has its own nav history stack:
 
   .state('tab.dash', {
