@@ -27,4 +27,12 @@ angular.module('starter')
     });
   };
 
+  $scope.goToAirport = function(airport) {
+    console.log(airport);
+
+    $state.go('tab.airport', {
+      airport: airport
+    });
+  };
+
 });

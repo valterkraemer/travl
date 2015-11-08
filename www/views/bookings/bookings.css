@@ -41,3 +41,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.bookings .airport-name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}

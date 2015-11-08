@@ -1,21 +1,40 @@
-<ion-view view-title="Bookings" class="bookings">
+<ion-view view-title="Journeys" class="bookings">
 <ion-content>
 
 <div class="list">
 
   <div class="booking" ng-repeat="booking in bookings">
 
-    <div class="item item-icon-right" ng-repeat="flight in booking.journeys[0].flights" ng-click="goToFlight(flight)">
-      <div class="row">
-        <div class="cell">
-          <div class="airport-names">{{flight.departure.airportName}} - {{flight.arrival.airportName}}</div>
-          <div><b>For: </b>{{booking.passengers.length}} persons</div>
-          <div><b>On: </b>{{flight.departure.scheduledDateTime | date:'fullDate'}}</div>
-        </div>
-        <div class="cell">
-          <i class="icon ion-ios-arrow-forward"></i>
-        </div>
+    <div ng-repeat="flight in booking.journeys[0].flights">
+      <div class="item item-icon-right" ng-click="goToAirport(flight.departure)">
+        <div class="airport-name">{{flight.departure.airportName}}</div>
+        <i class="icon ion-ios-arrow-forward"></i>
       </div>
+
+      <div class="item item-icon-right" ng-click="goToFlight(flight)">
+        <div class="first-row">
+          <span class="flight-number">
+            {{flight.marketingAirline}}{{flight.flightNumber}}
+          </span>
+          <span>
+            {{flight.departure.airport}}
+            <i class="ion-android-plane rotate90"></i>
+            {{flight.arrival.airport}}
+          </span>
+        </div>
+
+        <div>{{flight.departure.scheduledDateTime | date:'MMM d, y h:mm a'}}</div>
+
+        <i class="icon ion-ios-arrow-forward"></i>
+
+      </div>
+
+      <div class="item item-icon-right" ng-if="$last" ng-click="goToFlight(flight.arrival)">
+        <div class="airport-name">{{flight.arrival.airportName}}</div>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+
+
     </div>
 
   </div>
