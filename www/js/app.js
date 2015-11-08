@@ -52,6 +52,11 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
     templateUrl: 'views/get-started/get-started.html'
   })
 
+  .state('services', {
+    url: '/services',
+    templateUrl: 'views/services/services.html'
+  })
+
   // setup an abstract state for the tabs directive
   .state('tab', {
     url: '/tab',
