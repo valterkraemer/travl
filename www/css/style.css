@@ -104,3 +104,10 @@ Button-blue: #005DA0
 img.fullscreen  {
   width: 100%;
 }
+
+.rotate90:before {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
