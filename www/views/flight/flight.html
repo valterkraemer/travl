@@ -31,7 +31,7 @@
     <div class="col departure-time">
       {{flight.departure.estimatedDateTime | date:'shortTime'}}
     </div>
-    <div class="col plane">
+    <div class="col plane" ng-click="showNotification(flight)">
       <i class="ion-android-plane"></i>
     </div>
     <div class="col align-right arrival-time">
