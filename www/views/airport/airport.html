@@ -1,14 +1,12 @@
 <ion-view view-title="{{airport.airportName}}" class="next-flight">
 <ion-content>
 
-<div class="padding">
+<div class="padding" ng-if="airport.airport !== 'HEL'">
 
   <div class="button-bar">
   <a class="button" ng-class="{'active': whatView === 'to'}" ng-click="whatView = 'to'">To the airport</a>
     <a class="button" ng-class="{'active': whatView === 'at'}" ng-click="whatView = 'at'">At the airport</a>
   </div>
-
-
 
 </div>
 

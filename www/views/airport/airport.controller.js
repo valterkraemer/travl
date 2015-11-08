@@ -5,7 +5,11 @@ angular.module('starter')
   $scope.airport = $stateParams.airport;
   console.log($scope.airport);
 
-  $scope.whatView = 'to';
+  if ($scope.airport.airport === "HEL") {
+    $scope.whatView = 'at';
+  } else {
+    $scope.whatView = 'to';
+  }
 
   $scope.removePoints = function(points) {
     $rootScope.points -= points;
