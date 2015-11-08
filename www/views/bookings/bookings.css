@@ -2,18 +2,26 @@
   /*background-color: #243B53;*/
 }
 
+.bookings .item.airport-0 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.0)
+    ),url('../../img/narita.jpg') no-repeat center center;
+  background-size:cover;
+}
+
 .bookings .item.airport-1 {
   background: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
     ),url('../../img/helsinki.jpg') no-repeat center center;
   background-size:cover;
 }
 
 .bookings .item.airport-2 {
   background: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
     ),url('../../img/paris.jpeg') no-repeat center center;
   background-size:cover;
 }
