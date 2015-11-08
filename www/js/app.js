@@ -93,16 +93,29 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
     }
   })
 
-  .state('tab.mood', {
-    url: '/mood',
+  .state('tab.airport', {
+    url: '/airport',
     views: {
-      'tab-mood': {
-        templateUrl: 'views/mood/mood.html',
-        controller: 'TabsController'
+      'tab-bookings': {
+        templateUrl: 'views/airport/airport.html',
+        controller: 'AirportCtrl'
       }
+    },
+    params: {
+      flight: null
     }
   })
-  // Each tab has its own nav history stack:
+
+  .state('tab.mood', {
+      url: '/mood',
+      views: {
+        'tab-mood': {
+          templateUrl: 'views/mood/mood.html',
+          controller: 'TabsController'
+        }
+      }
+    })
+    // Each tab has its own nav history stack:
 
   .state('tab.main', {
     url: '/main',
