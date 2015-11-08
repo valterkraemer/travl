@@ -44,6 +44,7 @@
 
   <!-- Directives -->
   <script src="js/points.directive.js"></script>
+  <script src="js/purchase-notification.directive.js"></script>
 
 </head>
 <body ng-app="starter">
@@ -56,6 +57,7 @@
     <ion-nav-buttons side="right">
       <button class="button button-clear color-white points" ng-click="pointsModal()" points><i class="ion-star"></i> {{points}}</button>
     </ion-nav-buttons>
+    <img purchase-notification class="purchase-notification" src="img/mini_notification.png">
   </ion-nav-bar>
 
     <!--
@@ -63,6 +65,7 @@
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
+
     <ion-nav-view animation="slide-left-right"></ion-nav-view>
   </body>
   </html>
