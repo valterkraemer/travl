@@ -2,7 +2,7 @@
   /*background-color: #243B53;*/
 }
 
-.bookings .item:nth-child(1) {
+.bookings .item.airport-1 {
   background: linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
@@ -10,7 +10,7 @@
   background-size:cover;
 }
 
-.bookings .item:nth-child(2) {
+.bookings .item.airport-2 {
   background: linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
@@ -46,4 +46,9 @@
   color: white;
   font-size: 20px;
   font-weight: 600;
+}
+
+.bookings .first-row {
+  font-size: 20px;
+  margin-bottom: 10px;
 }

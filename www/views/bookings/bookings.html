@@ -1,4 +1,4 @@
-<ion-view view-title="Journeys" class="bookings">
+<ion-view view-title="Journeys" class="bookings background-dark-blue">
 <ion-content>
 
 <div class="list">
@@ -6,15 +6,15 @@
   <div class="booking" ng-repeat="booking in bookings">
 
     <div ng-repeat="flight in booking.journeys[0].flights">
-      <div class="item item-icon-right" ng-click="goToAirport(flight.departure)">
+      <div class="item item-icon-right" ng-click="goToAirport(flight.departure)" ng-class="'airport-' + $index">
         <div class="airport-name">{{flight.departure.airportName}}</div>
         <i class="icon ion-ios-arrow-forward"></i>
       </div>
 
-      <div class="item item-icon-right" ng-click="goToFlight(flight)">
+      <div class="item item-icon-right background-dark-blue" ng-click="goToFlight(flight)" ng-class="{{'flight-' + $index}}">
         <div class="first-row">
           <span class="flight-number">
-            {{flight.marketingAirline}}{{flight.flightNumber}}
+            <b>{{flight.marketingAirline}}{{flight.flightNumber}}</b>
           </span>
           <span>
             {{flight.departure.airport}}
@@ -29,7 +29,7 @@
 
       </div>
 
-      <div class="item item-icon-right" ng-if="$last" ng-click="goToFlight(flight.arrival)">
+      <div class="item item-icon-right" ng-if="$last" ng-click="goToAirport(flight.arrival)" ng-class="'airport-' + ($index + 1)">
         <div class="airport-name">{{flight.arrival.airportName}}</div>
         <i class="icon ion-ios-arrow-forward"></i>
       </div>
