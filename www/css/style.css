@@ -150,3 +150,31 @@ img.fullscreen  {
   -webkit-animation-timing-function: ease-in-out;
   animation-duration: 0.6;
 }
+
+.right-navigation {
+  position: absolute;
+  right: 8px;
+}
+
+.left.payment {
+  float: left;
+  width: 60px;
+  padding-top: 20px;
+  padding-left: 12px;
+}
+
+.notify-row-container {
+    max-width: 300px;
+}
+
+.left.payment.paypal {
+    padding-top: 17px;
+}
+
+.aero-points.item.item-text-wrap.item.item-icon-left {
+    padding-left: 76px;
+}
+
+.aero-points.item.item-text-wrap.item.item-icon-left i {
+    padding-left: 32px;
+}

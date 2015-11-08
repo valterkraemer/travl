@@ -60,7 +60,8 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
 
   .state('shop', {
     url: '/shop',
-    templateUrl: 'views/services/shop.html'
+    templateUrl: 'views/services/shop.html',
+    controller: 'ServicesController'
   })
 
   // setup an abstract state for the tabs directive
@@ -136,7 +137,7 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
         controller: 'MainCtrl'
       }
     }
-  });
+  })
 
   /*.state('tab.chats', {
       url: '/chats',

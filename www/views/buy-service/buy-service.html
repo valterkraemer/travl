@@ -1,0 +1,42 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title notify-title">Choose Payment Method</h1>
+    <div class="right-navigation">
+      <button class="button button-clear color-white points" points><i class="ion-star"></i> {{points}}</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+      <div class="item item-text-wrap item">
+        <img class="left payment" src="img/visa.png" alt="" />
+        <div class="notify-row-container">
+          <p class="notify-row-header">
+            Credit Card
+          </p>
+          <p>Tap here to to pay with VISA, MasterCard or American Express</p>
+        </div>
+      </div>
+      <div class="item item-text-wrap item">
+        <img class="left payment paypal" src="img/paypal.png" alt="" />
+        <div class="notify-row-container">
+          <p class="notify-row-header">
+            Pay Pal
+          </p>
+          <p>Tap here to to pay with Pay Pal</p>
+        </div>
+      </div>
+
+      <div class="aero-points item item-text-wrap item item-icon-left">
+        <i class="icon ion-ios-checkmark-outline notify-checkmark"></i>
+        <div class="notify-row-container" ng-click="hideBuyServiceModal()">
+          <p class="notify-row-header">
+            AERO Points
+          </p>
+          <p>
+            Tab here to pay with your AERO points
+          </p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

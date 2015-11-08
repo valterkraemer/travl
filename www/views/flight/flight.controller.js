@@ -1,6 +1,6 @@
 angular.module('starter')
 
-.controller('FlightCtrl', function($scope, FinnairApi, $stateParams, $rootScope) {
+.controller('FlightCtrl', function($scope, FinnairApi, $stateParams, $rootScope, $ionicModal, $state) {
 
   $scope.flight = $stateParams.flight;
   console.log($scope.flight);
