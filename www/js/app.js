@@ -54,7 +54,13 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
 
   .state('services', {
     url: '/services',
-    templateUrl: 'views/services/services.html'
+    templateUrl: 'views/services/services.html',
+    controller: 'ServicesController'
+  })
+
+  .state('shop', {
+    url: '/shop',
+    templateUrl: 'views/services/shop.html'
   })
 
   // setup an abstract state for the tabs directive
