@@ -9,14 +9,16 @@ angular.module('starter')
   console.log($scope.airport);
 
   if ($scope.airport.airport === "HEL") {
-    $scope.whatView = 'at';
+    $scope.vars = {
+      whatView: 'at'
+    };
   }
 
   $scope.removePoints = function(points) {
     $rootScope.points -= points;
   };
 
-  $scope.toServices = function () {
+  $scope.toServices = function() {
     $state.go('services');
   }
 
