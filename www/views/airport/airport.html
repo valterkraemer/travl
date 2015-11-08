@@ -1,5 +1,20 @@
 <ion-view view-title="{{airport.airportName}}" class="next-flight">
 <ion-content>
 
+<div class="padding">
+
+  <div class="button-bar">
+  <a class="button" ng-class="{'active': whatView === 'to'}" ng-click="whatView = 'to'">To the airport</a>
+    <a class="button" ng-class="{'active': whatView === 'at'}" ng-click="whatView = 'at'">At the airport</a>
+  </div>
+
+
+
+</div>
+
+<img src="img/To-the-airport.png" class="fullscreen" ng-if="whatView === 'to'">
+
+<img src="img/At-the-airport.png" class="fullscreen" ng-if="whatView === 'at'">
+
 </ion-content>
 </ion-view>
