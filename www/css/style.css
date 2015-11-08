@@ -63,6 +63,10 @@ Button-blue: #005DA0
   color: #fff;
 }
 
+.color-white i {
+  color: #fff;
+}
+
 .bar-header {
   background: #243B53;
   color: white;
