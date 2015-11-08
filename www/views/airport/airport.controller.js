@@ -1,6 +1,6 @@
 angular.module('starter')
 
-.controller('AirportCtrl', function($scope, FinnairApi, $stateParams, $rootScope) {
+.controller('AirportCtrl', function($scope, FinnairApi, $stateParams, $rootScope, $state) {
   $scope.vars = {
     whatView: 'to'
   };
@@ -15,5 +15,9 @@ angular.module('starter')
   $scope.removePoints = function(points) {
     $rootScope.points -= points;
   };
+
+  $scope.toServices = function () {
+    $state.go('services');
+  }
 
 });
