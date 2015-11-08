@@ -118,3 +118,35 @@ img.fullscreen  {
 .starbucks {
   color: white;
 }
+
+.purchase-notification {
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  position: absolute;
+  top: -25px;
+  z-index: 5;
+}
+
+@-webkit-keyframes purchase-notification {
+  0% {
+    top: -25px;
+  }
+  20% {
+    top: 45px;
+  }
+  80% {
+    top: 45px;
+  }
+  100% {
+    top: -25px;
+  }
+}
+.show-notification {
+  -webkit-animation-name: purchase-notification;
+  -webkit-animation-duration: 3s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-duration: 0.6;
+}
