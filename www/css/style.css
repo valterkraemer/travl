@@ -130,6 +130,7 @@ img.fullscreen  {
   position: absolute;
   top: -25px;
   z-index: 5;
+  display: none;
 }
 
 @-webkit-keyframes purchase-notification {
@@ -153,6 +154,7 @@ img.fullscreen  {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in-out;
   animation-duration: 0.6;
+  display: block;
 }
 
 .right-navigation {
