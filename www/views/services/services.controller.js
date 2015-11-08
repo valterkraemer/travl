@@ -19,7 +19,7 @@ angular.module('starter')
 
   $scope.hideBuyServiceModal = function() {
     $scope.buyServiceModal.hide();
-    $scope.removePoints(26);
+    $scope.removePoints(50);
     // JUST BOUGHT SHIT
   };
 

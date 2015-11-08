@@ -42,6 +42,10 @@ Button-blue: #005DA0
   color: #76EE00;
 }
 
+.list .item .payment-row-container {
+  max-width: 210px;
+}
+
 .notify-row-container {
   line-height: 1.2;
   display: inline-block;
