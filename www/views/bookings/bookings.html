@@ -6,7 +6,7 @@
   <div class="booking" ng-repeat="booking in bookings">
 
     <div ng-repeat="flight in booking.journeys[0].flights">
-      <div class="item item-icon-right" ng-click="goToAirport(flight)">
+      <div class="item item-icon-right" ng-click="goToAirport(flight.departure)">
         <div class="airport-name">{{flight.departure.airportName}}</div>
         <i class="icon ion-ios-arrow-forward"></i>
       </div>
@@ -29,7 +29,7 @@
 
       </div>
 
-      <div class="item item-icon-right" ng-if="$last">
+      <div class="item item-icon-right" ng-if="$last" ng-click="goToFlight(flight.arrival)">
         <div class="airport-name">{{flight.arrival.airportName}}</div>
         <i class="icon ion-ios-arrow-forward"></i>
       </div>

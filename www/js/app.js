@@ -102,7 +102,7 @@ angular.module('starter', ['ionic', 'ngResource', 'ngCordova'])
       }
     },
     params: {
-      flight: null
+      airport: null
     }
   })
 

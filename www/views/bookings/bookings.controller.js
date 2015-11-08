@@ -27,11 +27,11 @@ angular.module('starter')
     });
   };
 
-  $scope.goToAirport = function(flight) {
-    console.log(flight);
+  $scope.goToAirport = function(airport) {
+    console.log(airport);
 
     $state.go('tab.airport', {
-      flight: flight
+      airport: airport
     });
   };
 
